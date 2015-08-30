@@ -5,8 +5,8 @@ import android.net.Uri;
 import com.android.volley.Response;
 import com.android.volley.request.GsonRequest;
 
-import me.fulin.iphotosplus.AppController;
 import me.fulin.iphotosplus.bean.FlickrPhotos;
+import me.fulin.iphotosplus.util.VolleyHelper;
 
 /**
  * Created by jack on 29/8/15.
@@ -44,6 +44,6 @@ public class FlickerFetchr {
                     listener,
                     errorListener);
 
-        AppController.getInstance().addToRequestQueue(myReq);
+        VolleyHelper.getInstance().getRequestQueue().add(myReq); 
     }
 }
