@@ -2,7 +2,13 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-
+    <dimen name="text_size_title">20sp</dimen>
+    <dimen name="text_size_subhead">16sp</dimen>
+    <dimen name="text_size_title_bigger">28sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="text_size_body">14sp</dimen>
+    <dimen name="welcome_text_padding_bottom">160dp</dimen>
+    <dimen name="welcome_version_text_padding_bottom">120dp</dimen>
 
     <style name="discoverPlusDrawer" parent="Theme.nLiveo">
         <!-- Customize your theme here. -->
@@ -17,4 +23,6 @@
         <item name="colorPrimaryDark">@color/nliveo_blue_colorPrimaryDark</item>
         <item name="colorAccent">@color/nliveo_blue_colorPrimaryDark</item>
     </style>
+
+
 </resources>

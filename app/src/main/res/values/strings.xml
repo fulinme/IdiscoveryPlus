@@ -25,5 +25,6 @@
     <string name="failed">Failed to initialize Player</string>
     <string name="title_activity_main_tube">MainTubeActivity</string>
     <string name="title_activity_maintube">MaintubeActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
 
 </resources>

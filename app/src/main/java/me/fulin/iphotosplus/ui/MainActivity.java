@@ -39,21 +39,6 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
                 .addAllHelpItem(mHelpLiveo.getHelp())
                 .colorItemSelected(R.color.nliveo_blue_colorPrimary)
                 .colorNameSubHeader(R.color.nliveo_blue_colorPrimary)
-                        //.colorLineSeparator(R.color.nliveo_blue_colorPrimary)
-
-                //.footerItem(R.string.settings, R.mipmap.ic_settings_black_24dp)
-
-                        //{optional} - Header Customization
-                        //.customHeader(mCustomHeader)
-
-                        //{optional} - Footer Customization
-                        //.footerNameColor(R.color.nliveo_blue_colorPrimary)
-                        //.footerIconColor(R.color.nliveo_blue_colorPrimary)
-                        //.footerBackground(R.color.nliveo_white)
-
-                //.setOnClickUser(onClickPhoto)
-                //.setOnPrepareOptionsMenu(onPrepare)
-                //.setOnClickFooter(onClickFooter)
                 .build();
 
         int position = this.getCurrentPosition();
@@ -82,7 +67,6 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
             mFragmentManager.beginTransaction().replace(R.id.container, mFragment).commit();
         }
 
-        //setElevationToolBar(position != 1 ? 15 : 0);
 
     }
 }
