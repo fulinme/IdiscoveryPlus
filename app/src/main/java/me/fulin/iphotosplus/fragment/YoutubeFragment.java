@@ -27,6 +27,7 @@ import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import me.fulin.iphotosplus.AppController;
 import me.fulin.iphotosplus.R;
 import me.fulin.iphotosplus.bean.youtube.VideoItem;
 import me.fulin.iphotosplus.net.YoutubeConnector;
@@ -165,8 +166,9 @@ public class YoutubeFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> av, View v, int pos,
                                     long id) {
-                Intent intent = new Intent(getActivity().getApplicationContext(), YoutubePlayerActivity.class);
+                Intent intent = new Intent(AppController.getInstance().getApplicationContext(), YoutubePlayerActivity.class);
                 intent.putExtra("VIDEO_ID", mSearchResults.get(pos).getId());
+
                 startActivity(intent);
             }
 
@@ -224,7 +226,6 @@ public class YoutubeFragment extends Fragment {
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
-        //((MainActivity) activity).onSectionAttached(getArguments().getInt(ARG_SECTION_NUMBER));
     }
 
     @Override
