@@ -1,2 +1,6 @@
-# Iphotosplus
-![Image text](https://github.com/fulinme/Iphotosplus/blob/master/resource/Screen%20Shot%202015-08-30%20at%2001.41.44.png)
+# IDiscoverPlus
+
+<img src="https://github.com/fulinme/IdiscoveryPlus/blob/master/resource/0.png" alt="GitHub" title="GitHub,Social Coding" width="343" height="550" />
+<img src="https://github.com/fulinme/IdiscoveryPlus/blob/master/resource/1.png" alt="GitHub" title="GitHub,Social Coding" width="343" height="550" />
+<img src="https://github.com/fulinme/IdiscoveryPlus/blob/master/resource/3.png" alt="GitHub" title="GitHub,Social Coding" width="343" height="550" />
+<img src="https://github.com/fulinme/IdiscoveryPlus/blob/master/resource/4.png" alt="GitHub" title="GitHub,Social Coding" width="343" height="550" />
