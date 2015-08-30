@@ -17,7 +17,7 @@ public class FlickerFetchr {
 
     private static final String TAG = FlickerFetchr.class.getSimpleName();
 
-    private static final String API_KEY = "9fea2deef5c1c5dfcb31268f558dfe17";
+    private static final String API_KEY = "";
 
     private static String PageIndex="1";
 

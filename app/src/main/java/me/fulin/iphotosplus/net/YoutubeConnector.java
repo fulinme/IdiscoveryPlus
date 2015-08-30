@@ -19,7 +19,7 @@ import me.fulin.iphotosplus.bean.youtube.VideoItem;
 
 public class YoutubeConnector {
     // Your developer key goes here
-    public static final String KEY = "AIzaSyC70MHgd-B7GNQviEKkZ6X9pG66VIMo7A4";
+    public static final String KEY = "";
     private static final long MAXRESULT = 30;
     private YouTube mYoutube;
     private YouTube.Search.List mQuery;
