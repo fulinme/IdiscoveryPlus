@@ -1,4 +1,4 @@
-package me.fulin.iphotosplus.bean;
+package me.fulin.iphotosplus.bean.Flickr;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -11,8 +11,8 @@ import android.widget.TextView;
 import com.squareup.picasso.Picasso;
 
 import me.fulin.iphotosplus.R;
-import me.fulin.iphotosplus.bean.FlickrPhotos;
-import me.fulin.iphotosplus.bean.Photo;
+import me.fulin.iphotosplus.bean.Flickr.FlickrPhotos;
+import me.fulin.iphotosplus.bean.Flickr.Photo;
 import me.fulin.iphotosplus.net.FlickerFetchr;
 
 /**

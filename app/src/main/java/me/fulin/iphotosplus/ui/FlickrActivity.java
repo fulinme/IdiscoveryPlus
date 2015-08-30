@@ -1,13 +1,13 @@
-package me.fulin.iphotosplus;
+package me.fulin.iphotosplus.ui;
 
 import android.support.v4.app.Fragment;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import me.fulin.iphotosplus.R;
 import me.fulin.iphotosplus.fragment.PhotosFragment;
-import me.fulin.iphotosplus.ui.SingleFragmentActivity;
 
-public class MainActivity extends SingleFragmentActivity {
+public class FlickrActivity extends SingleFragmentActivity {
 
     @Override
     protected Fragment createFragment() {

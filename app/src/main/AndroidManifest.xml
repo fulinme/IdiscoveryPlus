@@ -12,14 +12,23 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/discoverPlusDrawer">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.FlickrActivity">
+        </activity>
+        <activity
+            android:name=".ui.YoutubePlayerActivity"
+            android:screenOrientation="landscape" />
+
     </application>
 
 </manifest>
+

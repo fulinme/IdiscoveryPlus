@@ -14,7 +14,7 @@ import com.android.volley.error.VolleyError;
 
 import me.fulin.iphotosplus.R;
 import me.fulin.iphotosplus.adapter.PhotosRecyclerViewAdapter;
-import me.fulin.iphotosplus.bean.FlickrPhotos;
+import me.fulin.iphotosplus.bean.Flickr.FlickrPhotos;
 import me.fulin.iphotosplus.net.FlickerFetchr;
 import me.fulin.iphotosplus.ui.SpacesItemDecoration;
 

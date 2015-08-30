@@ -1,6 +1,29 @@
 <resources>
-    <string name="app_name">Iphotosplus</string>
+    <string name="app_name">IDiscoverPlus</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="gallary">Flickr</string>
+    <string name="youtube">Youtube</string>
+    <string name="news">News</string>
+
+
+    <string name="title_section1">Sports</string>
+    <string name="title_section2">Science</string>
+    <string name="title_section3">Singapore</string>
+    <string name="title_section4">Tedx</string>
+    <string name="title_section5">Kids</string>
+    <string name="title_section6">Learn</string>
+    <string name="title_section7">English</string>
+    <string name="title_section8">Chinese</string>
+    <string name="title_section9">Eduction</string>
+    <string name="title_section10">CNTV</string>
+
+    <string name="search">Search</string>
+    <string name="failed">Failed to initialize Player</string>
+    <string name="title_activity_main_tube">MainTubeActivity</string>
+    <string name="title_activity_maintube">MaintubeActivity</string>
+
 </resources>

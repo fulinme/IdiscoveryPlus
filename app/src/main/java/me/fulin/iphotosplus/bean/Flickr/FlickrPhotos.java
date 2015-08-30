@@ -1,4 +1,4 @@
-package me.fulin.iphotosplus.bean;
+package me.fulin.iphotosplus.bean.Flickr;
 
 /**
  * Created by jack on 29/8/15.
