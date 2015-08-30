@@ -1,6 +1,7 @@
 package me.fulin.iphotosplus.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,7 @@ import me.fulin.iphotosplus.R;
 import me.fulin.iphotosplus.bean.Flickr.FlickrPhotos;
 import me.fulin.iphotosplus.bean.Flickr.Photo;
 import me.fulin.iphotosplus.net.FlickerFetchr;
+import me.fulin.iphotosplus.ui.PhotoPageActivity;
 
 /**
  * Created by jack on 29/8/15.
@@ -23,6 +25,7 @@ public class PhotosRecyclerViewAdapter extends RecyclerView.Adapter<PhotosRecycl
 
     private Context mContext;
     private FlickrPhotos mFlickrPhotos;
+    private Photo mPhoto;
 
     public PhotosRecyclerViewAdapter(Context context, FlickrPhotos flickrPhotos) {
         mContext = context;
@@ -39,11 +42,11 @@ public class PhotosRecyclerViewAdapter extends RecyclerView.Adapter<PhotosRecycl
 
     @Override
     public void onBindViewHolder(PhotosViewHolder holder, int position) {
-        Photo photo = mFlickrPhotos.getPhotos().getPhoto().get(position);
-        String imageUrl = FlickerFetchr.IMAGE_URL_FORMAT.replace("{farm-id}", photo.getFarm()+"").
-                replace("{server-id}", photo.getServer()).replace("{id}", photo.getId()).replace("{secret}", photo.getSecret());
+        mPhoto = mFlickrPhotos.getPhotos().getPhoto().get(position);
+        String imageUrl = FlickerFetchr.IMAGE_URL_FORMAT.replace("{farm-id}", mPhoto.getFarm()+"").
+                replace("{server-id}", mPhoto.getServer()).replace("{id}", mPhoto.getId()).replace("{secret}", mPhoto.getSecret());
         Picasso.with(mContext).load(imageUrl).into(holder.mImageView);
-        holder.mTextView.setText(photo.getTitle());
+        holder.mTextView.setText(mPhoto.getTitle());
     }
 
     @Override
@@ -51,7 +54,7 @@ public class PhotosRecyclerViewAdapter extends RecyclerView.Adapter<PhotosRecycl
         return mFlickrPhotos == null ? 0 : mFlickrPhotos.getPhotos().getPhoto().size();
     }
 
-    public static class PhotosViewHolder extends RecyclerView.ViewHolder {
+    public  class PhotosViewHolder extends RecyclerView.ViewHolder {
 
         ImageView mImageView;
         TextView mTextView;
@@ -64,9 +67,13 @@ public class PhotosRecyclerViewAdapter extends RecyclerView.Adapter<PhotosRecycl
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    //Log.d("NormalTextViewHolder", "onClick--> position = " + getPosition());
+                    //Intent i = new Intent(Intent.ACTION_VIEW, mPhoto.getPhotoPageUri());
+                    Intent i = PhotoPageActivity.newIntent(mContext, mPhoto.getPhotoPageUri());
+                    mContext.startActivity(i);
                 }
             });
+
+
         }
     }
 }

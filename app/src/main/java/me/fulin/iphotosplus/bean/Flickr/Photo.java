@@ -1,5 +1,7 @@
 package me.fulin.iphotosplus.bean.Flickr;
 
+import android.net.Uri;
+
 /**
  * Created by jack on 29/8/15.
  */
@@ -23,6 +25,18 @@ public class Photo {
     private Integer isfriend;
 
     private Integer isfamily;
+
+
+    public Uri getPhotoPageUri()
+    {
+        //mobile web format https://m.flickr.com/#/photos/90694458@N07/20376186874/
+        //web format http://www.flickr.com/photos
+        return Uri.parse("https://m.flickr.com/#/photos/"+ owner + "/" + id);
+                //.buildUpon()
+                //.appendEncodedPath(owner)
+                //.appendEncodedPath(id)
+                //.build();
+    }
 
     /**
      *
