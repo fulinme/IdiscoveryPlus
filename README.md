@@ -1,6 +1,6 @@
 # IDiscoverPlus
 
-use this android app to explore Youtube Videos(Movies, news,.....),  funny Flickr's photos.
+use this android app to explore Youtube Videos(Movies, news,.....),   Flickr's funny photos.
 keep improving, more features will be added. 
 
 
