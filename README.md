@@ -1,5 +1,7 @@
 # IDiscoverPlus
 
+With this android app, can explore Youtube Videos, Flickr's photos.
+keep improving, more features will be added. 
 
 
 ![Alt Text](https://github.com/fulinme/IdiscoveryPlus/blob/master/resource/Aug%2030%2C%202015%2019:273.gif)
